@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.header {
+
+
+    background-color: #fff;
+}
+
+.header-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-logo {
+    width: 75px;
+    height: 72px;
+}
+
+.header-burger {
+    height: 31px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.burger-line {
+    width: 48px;
+    height: 6px;
+    background-color: #000;
+
+}
+
+.whatsapp {
+    margin-top: 10px;
+}
+
+.header-phone {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+.whatsapp {
+    margin-left: 20px;
+}
+
+
+.main {
+    background-image: url(https://franchise-capital.com/wp-content/uploads/2021/01/Franshyza-Global-Coffee-24.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 100vh;
+    
+}
+
+.main-overlay {
+    background-color: rgba(107, 107, 107, .55);
+    height: 100vh;
+}
+
+.form {
+    width: 350px;
+    height: 380px;
+    padding: 20px 30px;
+    background-color: #fff;
+    opacity: 0.82;
+    position: fixed;
+    top: 130px;
+    left: 17%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input {
+    opacity: 0.82;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+    font-size: 18px;
+    color: #fff;
+    font-style: italic;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #fff;
+    font-style: italic;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.form-btn {
+    padding: 20px 25px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+
+.modal-window {
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.poppin-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+.poppin-window {
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.desc{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.agree {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.drop {
+    font-size: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.yes {
+    margin-right: 15px;
+}
+
+.yes-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+
+.no-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+
+}
+
+.yes-window {
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    transform: translateY(-100%);
+}
+
+.no-window {
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width: 416px) {
+    .form {
+        left: 6%;
+        padding: 10px 20px;
+        width: 300px;
+    }
+
+    .header-phone {
+        font-size: 16px;
+    }
+
+    .header-container {
+        justify-content: space-around;
+    }
+
+    .whatsapp {
+        margin-left: 5px;
+    }
+}
